@@ -1,0 +1,38 @@
+{
+  "name": "vshred",
+  "version": "1.0.0",
+  "description": "App for sending Deals reports to CRM",
+  "homepage": "https://github.com/onyx1812/mg-vue-vshred",
+  "author": {
+    "name": "Globa Max",
+    "email": "onyx18121990@gmail.com",
+    "url": "https://www.instagram.com/maxgloba_dev/"
+  },
+  "license": "ISC",
+  "main": "./server/start.js",
+  "scripts": {
+    "start": "node server/start.js",
+    "dev": "nodemon server/serve_dev.js",
+    "live": "node server/serve_live.js",
+    "init:dev": "node server/init_dev.js",
+    "init:live": "node server/init_live.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "child_process": "^1.0.2",
+    "childprocess": "^2.0.2",
+    "connect-history-api-fallback": "^1.6.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "klaviyo-node": "^1.0.8",
+    "mysql": "^2.17.1",
+    "request": "^2.88.2",
+    "stripe": "^8.84.0"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.2",
+    "reload": "^3.0.3"
+  }
+}

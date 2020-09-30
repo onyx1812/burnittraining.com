@@ -1,0 +1,111 @@
+.quiz{
+  background: url('../../assets/img/bg.webp') no-repeat fixed center top/cover;
+  height: calc(100vh - 210px - 40px);
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  padding: 15px;
+  overflow-y: auto;
+  &-wrap{
+    background: rgba(255,2552,255, .5);
+    width: 992px;
+    max-width: 100%;
+    padding: 30px;
+    @media(min-width:768px){
+      padding: 60px;
+    }
+    @media(min-width:1200px){
+      padding: 90px;
+    }
+  }
+}
+
+h1{
+  color: white;
+  background-color: hsl(211, 75%, 25%);
+  padding: 10px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  @media(min-width:768px){
+    font-size: 20px;
+  }
+  @media(min-width: 992px){
+    font-size: 28px;
+    padding: 24px;
+  }
+  &.woman{
+    background-color: hsl(331, 63.2%, 56.3%);
+  }
+}
+
+.question{
+  background: #fff;
+  padding: 30px 0;
+  h2{
+    color: #005C66;
+    font-size: 20px;
+    font-family: "Fjalla One", sans-serif;
+    margin: 0;
+    text-align: center;
+    @media(min-width:768px){
+      font-size: 24px;
+    }
+    @media(min-width:992px){
+      font-size: 32px;
+    }
+  }
+  .row{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &-1{
+    .row{
+      width: 600px;
+    }
+  }
+  &-2{
+
+  }
+  &-3{}
+  &-4{}
+  &-5{}
+}
+
+.btn{
+  background: #000;
+  border-radius: 4px;
+  padding: 30px;
+  transition: .5s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  width: 100%;
+  margin: 15px 0;
+  &:hover{
+    background: #333;
+    box-shadow: 0 13px 16px rgba(0,0,0,0.26), 0 13px 16px rgba(0,0,0,0.33);
+    transform: translate(0, -10px);
+  }
+  &-woman {
+    color: #f5478f;
+  }
+  &-man {
+    color: #008bfc;
+  }
+  &-icon{
+    .fa{
+      font-size: 120px;
+    }
+    span{
+      font-family: "Fjalla One", sans-serif;
+      color: #fff;
+      display: block;
+      font-weight: 900;
+      margin-top: 15px;
+      font-size: 40px;
+    }
+  }
+}
